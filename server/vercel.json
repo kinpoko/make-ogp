@@ -2,7 +2,7 @@
     "functions": {
         "api/main.py": {
             "memory": 1024,
-            "maxDration": 10
+            "maxDuration": 10
         }
     }
 }
