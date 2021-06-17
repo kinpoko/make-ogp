@@ -4,8 +4,10 @@ services:
    
     api:
       container_name: "api"
-      build: .
-      restart: always
+      build: ./docker
+      volumes:
+        - ./api:/app
       tty: true
       ports:
         - 8000:8000
+      command: uvicorn main:app --reload --host 0.0.0.0 --port 8000
