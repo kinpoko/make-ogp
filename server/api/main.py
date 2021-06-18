@@ -17,7 +17,7 @@ def og_image(
     
     if template in template_name:  
         make_og_image(title, template)
-        return FileResponse("api/tmp/og.png")
+        return FileResponse("tmp/og.png")
 
     else:
         return {"not":"found"}

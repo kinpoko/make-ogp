@@ -14,5 +14,5 @@ def make_og_image(title: str, template: str) -> Image:
     else:
         template_image_path : str = os.path.join(CURRENT_DIR, f"template/{template}.png")
         template_image = Image.open(template_image_path).copy()
-        template_image.save(f"{CURRENT_DIR}/tmp/og.png")
+        template_image.save("tmp/og.png")
 
