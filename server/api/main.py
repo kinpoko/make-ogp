@@ -16,8 +16,8 @@ def og_image(
     title.encode('utf-8')
     
     if template in template_name:  
-        make_og_image(title, template)
-        return FileResponse("tmp/ogp.png")
+        opg_img = make_og_image(title, template)
+        return opg_img
 
     else:
         return {"not":"found"}
