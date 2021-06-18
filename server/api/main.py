@@ -1,7 +1,8 @@
 from typing import Optional
 
-from fastapi import FastAPI, Path, Query
+from fastapi import FastAPI, Response, Path, Query
 from fastapi.responses import FileResponse
+
 
 from .image import make_og_image, template_name
 
@@ -16,8 +17,8 @@ def og_image(
     title.encode('utf-8')
     
     if template in template_name:  
-        opg_img = make_og_image(title, template)
-        return opg_img
+        ogp_image = make_og_image(title, template)
+        return Response(content=ogp_image, media_type="image/png")
 
     else:
         return {"not":"found"}

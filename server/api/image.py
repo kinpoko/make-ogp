@@ -10,7 +10,7 @@ template_name = [
     "kinpokoblog"
 ]
 
-def make_og_image(title: str, template: str) -> str:
+def make_og_image(title: str, template: str):
     if template == "default":
         return 
     else:
@@ -18,7 +18,5 @@ def make_og_image(title: str, template: str) -> str:
         template_image = Image.open(template_image_path).copy()
         buffer = BytesIO()
         template_image.save(buffer, format="png")
-        opg_img_str = base64.b64encode(buffer.getvalue()).decode("ascii")
-
-        return opg_img_str
-
+        
+        return buffer.getvalue()
