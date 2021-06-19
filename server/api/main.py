@@ -1,8 +1,7 @@
 from typing import Optional
 
-from fastapi import FastAPI, Response, Path, Query
-from fastapi.responses import FileResponse
-
+from fastapi import FastAPI, Response, Query
+import urllib.parse
 
 from .image import make_og_image, template_name
 
@@ -14,7 +13,7 @@ def og_image(
     title: str,
     template: str = Query("default")):
 
-    title.encode('utf-8')
+    title = urllib.parse.unquote(title)
     
     if template in template_name:  
         ogp_image = make_og_image(title, template)
