@@ -5,14 +5,16 @@
 
 ![hello world](https://vercel-generating-og-images.vercel.app/hello%20world.png?template=kinpokoblog)
 
+## APIドキュメント
+[https://vercel-generating-og-images.vercel.app/docs](https://vercel-generating-og-images.vercel.app/docs)
+
+
 ## インストールと起動
 
 ```
 git clone https://github.com/kinpoko/vercel-generating-og-images.git
 docker-compose up -d --build
 ```
-## APIドキュメント
-[https://vercel-generating-og-images.vercel.app/docs](https://vercel-generating-og-images.vercel.app/docs)
 
 ## 参考にさせていただいたサイト
 
