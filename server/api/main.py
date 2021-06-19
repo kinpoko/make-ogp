@@ -11,7 +11,7 @@ app = FastAPI()
 
 @app.get("/{title}.png")
 def og_image( 
-    title: str = Path(..., max_length=50),
+    title: str,
     template: str = Query("default")):
 
     title.encode('utf-8')
