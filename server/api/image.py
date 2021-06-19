@@ -1,11 +1,12 @@
 import os
 from PIL import Image, ImageFont, ImageDraw
 from io import BytesIO
+
 from .lib import fw_wrap
 
 CURRENT_DIR = os.path.dirname(__file__)
 
-template_name = [
+template_image_name = [
     "default",
     "kinpokoblog"
 ]
@@ -16,7 +17,7 @@ font_color = (0, 0, 0)
 
 def make_og_image(title: str, template: str) -> bytes:
     
-    template_image_path : str = os.path.join(CURRENT_DIR, f"template/{template}.png")
+    template_image_path : str = os.path.join(CURRENT_DIR, f"templateimages/{template}.png")
     font_path : str = os.path.join(CURRENT_DIR, f"font/{font_file_name}")
 
     output_image = Image.open(template_image_path).copy()
