@@ -18,8 +18,9 @@ def og_image(
     
     if template in template_name:  
         ogp_image = make_og_image(title, template)
+        
         return Response(content=ogp_image, media_type="image/png")
 
     else:
-        return {"not":"found"}
+        return {"template":"notfound"}
     
