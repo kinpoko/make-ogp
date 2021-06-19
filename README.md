@@ -5,7 +5,7 @@
 
 ![hello world](https://vercel-generating-og-images.vercel.app/hello%20world.png?template=kinpokoblog)
 
-## インストール
+## インストールと起動
 
 ```
 git clone https://github.com/kinpoko/vercel-generating-og-images.git
