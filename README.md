@@ -1,9 +1,15 @@
 # vercel-generateing-og-images
 
 ## Demo
+
 `https://vercel-generating-og-images.vercel.app/hello%20world.png?template=kinpokoblog`
 
 ![hello world](https://vercel-generating-og-images.vercel.app/hello%20world.png?template=kinpokoblog)
+
+## API Document
+
+[https://vercel-generating-og-images.vercel.app/docs](https://vercel-generating-og-images.vercel.app/docs)
+
 
 ## Install&Build
 
@@ -12,9 +18,6 @@ git clone https://github.com/kinpoko/vercel-generating-og-images.git
 docker-compose up -d --build
 ```
 
-## API Document
-
-[https://vercel-generating-og-images.vercel.app/docs](https://vercel-generating-og-images.vercel.app/docs)
 
 ## Reference
 
