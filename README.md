@@ -2,9 +2,9 @@
 
 ## Demo
 
-`https://vercel-generating-og-images.vercel.app/hello%20world.png?template=kinpokoblog`
+`https://vercel-generating-og-images.vercel.app/Hello%20World.png?template=kinpokoblog`
 
-![hello world](https://vercel-generating-og-images.vercel.app/hello%20world.png?template=kinpokoblog)
+![Hello World](https://vercel-generating-og-images.vercel.app/Hello%20World.png?template=kinpokoblog)
 
 ## API Document
 
